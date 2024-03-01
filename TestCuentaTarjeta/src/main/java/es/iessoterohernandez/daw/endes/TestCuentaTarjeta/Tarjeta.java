@@ -1,7 +1,9 @@
 package es.iessoterohernandez.daw.endes.TestCuentaTarjeta;
 
-public class Tarjeta {
-	
+import java.util.Date;
+
+public abstract class Tarjeta 
+{
 	protected String mNumero, mTitular;
 	protected Date mFechaDeCaducidad;
 	/**
@@ -26,6 +28,4 @@ public class Tarjeta {
 	public abstract void ingresar(double x) throws Exception;
 	public abstract void pagoEnEstablecimiento(String datos, double x) throws Exception;
 	public abstract double getSaldo();
-
-	
 }
